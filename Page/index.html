@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILIRIA DE LUXE & ILIRIA HILL </title>
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/profile.jpg">
+</head>
+<body>
+    
+    <header>
+        <a href="../index.html" class="brand">ILIRIA DE LUXE & ILIRIA HILL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+        <div class="navigation-items">
+        <a href="../Page/iliria.html">Restaurantet</a>
+        <a href="../Page/sallat.html">Sallat e Dasmave</a>
+        <a href="../Page/kuzhina.html">Kuzhina</a>
+        <a href="../Page/about.html">Rreth Nesh</a>
+        <a href="../Page/kontakti.html">Kontakti</a>
+        </div>
+        </div>
+        </header>
+        <section class="home">
+        <video class="video-slide active" src="../hill.mp4" autoplay muted loop></video>
+        <div class="content active">
+        <h1>ILIRIA<br><span>HILL</span></h1>
+        <p>Iliria Hill Resort is the newest 5-star Resort, located in the magnificent and enchanting mountain location, in the village of Shamalluk 
+            in Podujeva, where the beauty of nature and the splendor of cuisine are in the center of attention. 
+            Spread amidst breathtaking mountain greenery and with a stunning view of the Kosovo plain, our resort offers an unforgettable
+             experience for guests of all ages. With fantastic food and service, it is an irreplaceable destination.</p>
+        <a href="#">Shiko më shumë</a>
+        </div>
+
+        <div class="content">
+        <h1>ILIRIA<br><span>DE LUXE</span></h1>
+        <p>Restaurant Ilira De Luxe është një destinacion me traditë dhe renome në organizimin e ngjarjeve të vecanta familjare.
+            Ky vend është i njohur për shëerbimin e shkëlqyer dhe ushqimin e përgatitur me kujdes,duke u gëershetuar
+            moedrnja me tradicionalen.Me një reputacion të ndërtuar ndër vite,mysafirët gjithmonë ndahen të kënaqur,duke vlerësuar cilësinë e lartë të shëerbimit dhe atmosferën e vecantë që ofron Restauranti.
+        </p>
+        <a href="../Page/sallat.html">Shiko më shumë</a>
+        </div>
+     
+        <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        </div>
+        </section>
+
+        <script type="text/javascript">
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+        var sliderNav = function(manual){
+        btns.forEach((btn) => {
+        btn.classList.remove("active");
+        });
+        slides.forEach((slide) => {
+        slide.classList.remove("active");
+        });
+        contents.forEach((content) => {
+        content.classList.remove("active");
+        });
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+        }
+        btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+        sliderNav(i);
+        });
+        });
+        </script>
+
+
+<section class="shop-section">
+    <div class="image-cont">
+        <img src="../img/iliriaa.jpg" alt="Gold Necklace" />
+    </div>
+    <div class="content-cont">
+        <h3>Restaurant Dasmash</h3>
+        <h1>ILIRIA DE LUXE</h1>
+        <p>Restaurant Ilira De Luxe është një destinacion me traditë dhe renome në organizimin e ngjarjeve të vecanta familjare.
+            Ky vend është i njohur për shëerbimin e shkëlqyer dhe ushqimin e përgatitur me kujdes,duke u gëershetuar
+            moedrnja me tradicionalen.Me një reputacion të ndërtuar ndër vite,mysafirët gjithmonë ndahen të kënaqur,
+            duke vlerësuar cilësinë e lartë të shëerbimit dhe atmosferën e vecantë që ofron Restauranti.
+        </p>
+        <a href="../Page/iliria.html" class="btn-discover">Kliko për më shumë</a>
+    </div>
+</section>
+
+
+
+<div class="gallery">
+    <a href="..//Page/ushqimet.html" class="gallery-item">
+        <img src="../img/ushqime.jpg" alt="Image 1">
+        <div class="text-overlay">Ushqimet</div>
+    </a>
+    <a href="../Page/pishina.html" class="gallery-item">
+        <img src="../img/pishina.jpg" alt="Image 2">
+        <div class="text-overlay">Pishina</div>
+    </a>
+    <a href="../Page/dhomat.html" class="gallery-item">
+        <img src="../img/collage.jpg" alt="Image 3">
+        <div class="text-overlay">Dhomat</div>
+    </a>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Finegap</h4>
+                <ul>
+                    <li><a href="">Tuorials</a></li>
+                    <li><a href="">Programing</a></li>
+                    <li><a href="">Development</a></li>
+                    <li><a href="">Technology</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Properties</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact US</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Our History</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="">API Integration</a></li>
+                    <li><a href="">Web Development</a></li>
+                    <li><a href="">Mobile Development</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <form action="">
+                    <input type="text" placeholder="Your Name" class="inputName">
+                    <input type="email" placeholder="Enter Company Email" class="inputEmail">
+                    <input type="submit" value="Submit" class="inputSubmit">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <p>&#169; Copyright @ | <a href="#" style="text-decoration: none; color: white;">Altina Restelica</a></p>
+            </div>
+            <div class="socialIcons">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="../all.js"></script>
+</body>
+</html>

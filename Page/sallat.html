@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../Css/sallat.css" />
+    <title>ILIRIA DE LUXE & ILIRIA HILL</title>
+    <link rel="icon" type="image/x-icon" href="../img/profile.jpg">
+  </head>
+  <body>
+    <header>
+        <a href="../Page/index.html" class="brand">ILIRIA DE LUXE & ILIRIA HILL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+        <div class="navigation-items">
+        <a href="../Page/iliria.html">Restaurantet</a>
+        <a href="../Page/sallat.html">Sallat e Dasmave</a>
+        <a href="../Page/kuzhina.html">Kuzhina</a>
+        <a href="../Page/about.html">Rreth Nesh</a>
+        <a href="../Page/kontakti.html">Kontakti</a>
+        </div>
+        </div>
+        </header>
+        <section class="home">
+            <video class="video-slide active" src="../video.mp4" autoplay muted loop></video>
+            <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".navigation");
+            menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+            });
+            const btns = document.querySelectorAll(".nav-btn");
+            const slides = document.querySelectorAll(".video-slide");
+            const contents = document.querySelectorAll(".content");
+            var sliderNav = function(manual){
+            btns.forEach((btn) => {
+            btn.classList.remove("active");
+            });
+            slides.forEach((slide) => {
+            slide.classList.remove("active");
+            });
+            contents.forEach((content) => {
+            content.classList.remove("active");
+            });
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+            }
+            btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+            sliderNav(i);
+            });
+            });
+            </script>
+
+           
+
+            <br><br><br><br><br>
+
+            <div class="heading">
+                <h1>Salla Dasmave</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Id suscipit velit in, minus laborum ullam provident 
+                     reprehenderit. Reiciendis ut nesciunt obcaecati soluta,
+                      corporis atque. Asperiores laborum pariatur exercitationem 
+                      aliquam facere.</p>
+            </div>
+
+
+
+            <div class="image">
+                <img src="../img/dasma7.jpg" alt="">
+                <img src="../img/dasma8.jpg" alt="">
+                <img src="../img/dasma12.jpg" alt="">
+                <img src="../img/dasma3.jpg" alt="">
+                <img src="../img/dasma13.jpg" alt="">
+                <img src="../img/dasma11.jpg" alt="">
+                <img src="../img/dasma3.jpg" alt="">
+                <img src="../img/dasma13.jpg" alt="">
+                <img src="../img/dasma11.jpg" alt="">
+            </div>
+            
+      
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Finegap</h4>
+                            <ul>
+                                <li><a href="">Tuorials</a></li>
+                                <li><a href="">Programing</a></li>
+                                <li><a href="">Development</a></li>
+                                <li><a href="">Technology</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Properties</h4>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact US</a></li>
+                                <li><a href="">Team</a></li>
+                                <li><a href="">Our History</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="">API Integration</a></li>
+                                <li><a href="">Web Development</a></li>
+                                <li><a href="">Mobile Development</a></li>
+                                
+                            </ul>
+                        </div>
+            
+                        <div class="footer-col">
+                            <h4>Newsletter</h4>
+                            <form action="">
+                                <input type="text" placeholder="Your Name" class="inputName">
+                                <input type="email" placeholder="Enter Company Email" class="inputEmail">
+                                <input type="submit" value="Submit" class="inputSubmit">
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <p>&#169; Copyright @ | <a href="#" style="text-decoration: none; color: white;">Altina Restelica</a></p>
+                        </div>
+                        <div class="socialIcons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <script src="/lightbox-plus-jquery.js"></script>
+           
+  </body>
+</html>

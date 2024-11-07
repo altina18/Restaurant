@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #222;
+}
+.header {
+    background: linear-gradient(to bottom, #8e8c8c 23%, #464242 95%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+  }
+  .navbar .logo a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  .navbar .links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+  }
+  .navbar .links a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    transition: 0.2s ease;
+  }
+  .navbar .buttons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px 0;
+    transition: 0.2s ease;
+  }
+  .navbar .buttons a:not(:last-child) {
+    margin-right: 30px;
+  }
+  .navbar .buttons .signin:hover {
+    color: #47b2e4;
+  }
+  .navbar .buttons .signup {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 0.375rem;
+    text-align: center;
+    transition: 0.2s ease;
+  }
+  .navbar .buttons .signup:hover {
+    background-color: #47b2e4;
+    color: #fff;
+  }
+  .hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .hero-section .hero {
+    max-width: 50%;
+    color: #fff;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #c9c7c7;
+  }
+  .hero-section .img img {
+    width: 517px;
+  }
+  .hero-section .buttons {
+    margin-top: 40px;
+  }
+  .hero-section .buttons a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    display: inline-block;
+  }
+  .hero-section .buttons a:not(:last-child) {
+    margin-right: 15px;
+  }
+  .buttons .join {
+    background-color: #47b2e4;
+  }
+  .hero-section .buttons .learn {
+    border: 1px solid #fff;
+    border-radius: 0.375rem;
+  }
+  .hero-section .buttons a:hover {
+    background-color: #47b2e4;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  #hamburger-btn {
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    order: 1;
+  }
+  @media screen and (max-width: 1023px) {
+    .navbar .logo a {
+      font-size: 1.5rem;
+    }
+    .links {
+      position: fixed;
+      left: -100%;
+      top: 75px;
+      width: 100%;
+      height: 100vh;
+      padding-top: 50px;
+      background: #998d8d;
+      flex-direction: column;
+      transition: 0.3s ease;
+    }
+    .navbar #menu-toggle:checked ~ .links {
+      left: 0;
+    }
+    .navbar #hamburger-btn {
+      display: block;
+    }
+    .header .buttons {
+      display: none;
+    }
+    .hero-section .hero {
+      max-width: 100%;
+      text-align: center;
+    }
+    .hero-section img {
+      display: none;
+    }
+  }
+
+  .home{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    background: url(../img/about.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* .home .content{
+    max-width: 50rem;
+    text-align: center;
+    align-items: center;
+}
+.home .content h3{
+    font-size: 3rem;
+    color: #333;
+} */
+
+
+.heading{
+    background-color: #222;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background: #e6884d;
+}
+.heading p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+@media screen and (max-width: 768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+}
+
+.additional-images {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+.additional-image {
+    width: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+footer .container{
+    background-color: #222;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col h4{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-col h4::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    bottom: -10px;
+}
+
+.footer-col ul li{
+    padding: 10px 0;
+}
+.footer-col ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+.footer-col .inputSubmit{
+    padding: 0px 20px;
+    background-color: #000;
+    border: none;
+    color: white;
+}
+.col p{
+    color: #fff;
+}
+.row hr{
+    opacity: 0.7;
+}
+
+.row .socialIcons i{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+
+.row .socialIcons i:hover{
+    color: #e91e64;
+}
+
+@media (max-width: 600px){
+    footer .row{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    footer .footer-col ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+}
+
+@media(max-width:768px){
+    .home .content h3{
+        font-size: 3.5rem;
+    }
+    .home .content span{
+        font-size: 2rem;
+    }
+    .icons-container .icons h3{
+        font-size: 1rem;
+    }
+    .icons-container .icons span{
+        font-size: 1rem;
+    }
+}
+
+  

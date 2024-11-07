@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/iliria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>ILIRIA DE LUXE & ILIRIA HILL</title>
+    <link rel="icon" type="image/x-icon" href="../img/profile.jpg">
+</head>
+<body>
+        
+    <header>
+        <a href="../Page/index.html" class="brand">ILIRIA DE LUXE & ILIRIA HILL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+        <div class="navigation-items">
+        <a href="../Page/iliria.html">Restaurantet</a>
+        <a href="../Page/sallat.html">Sallat e Dasmave</a>
+        <a href="../Page/kuzhina.html">Kuzhina</a>
+        <a href="../Page/about.html">Rreth Nesh</a>
+        <a href="../Page/kontakti.html">Kontakti</a>
+        </div>
+        </div>
+        </header>
+        <section class="home">
+        <video class="video-slide active" src="../AQPltc_GL3VQDR6bjYjh3OdI1L4fACHnv3W4K27aSkA4sBQHoHS89lAISKUp5tL_AckQL6DDkTF2cozEb9q3q2Oc.mp4" autoplay muted loop></video>
+        <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        </div>
+        </section>
+
+        <script type="text/javascript">
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+        var sliderNav = function(manual){
+        btns.forEach((btn) => {
+        btn.classList.remove("active");
+        });
+        slides.forEach((slide) => {
+        slide.classList.remove("active");
+        });
+        contents.forEach((content) => {
+        content.classList.remove("active");
+        });
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+        }
+        btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+        sliderNav(i);
+        });
+        });
+        </script>
+
+
+<br><br><br><br>
+      
+      <h1 style="font-size: 50px; color: #fff; text-align: center;">DASMA</h1>
+      <div class="line"></div>
+      <div class="content">
+          Nga festat më të vogla familjare deri te dasmat madhështore me një dimension përrallor, eventet e Vali Ranch janë të paharrueshme dhe magjike. Sallat dhe ambientet e jashtme të resortit tonë të mrekullueshëm, ju ofrojnë shumë mundësi në zgjedhjen se si dëshironi ta kaloni ditën më të shenjtë të jetës tuaj. Dekorimet magjike, tavolinat përplot ushqime nga ato më ekzotiket, garantojnë për një event më shumë se perfekt.
+      </div>
+  
+
+      <br><br><br>
+
+
+
+
+
+<section class="shop-section">
+    <div class="image-cont">
+        <img src="../img/p.png" alt="Gold Necklace" />
+    </div>
+    <div class="content-cont">
+        <h1>Pamje tërësisht e re nga 2025</h1>
+        <p>Nga marsi 2025, Restaurant Iliria De Luxe do të ju mirëpresë me një pamje tërësisht të renovuar dhe të  transformuar ! 
+          Nëse planifikoni dasmën apo eventin tuaj të ardhshëm, zgjidhni një ambient që ofron:
+          ✨ Sallë komode dhe elegante
+          🌸 Dekor magjepsës dhe të personalizuar
+          🎶 Atmosferë unike për çdo lloj feste.
+          Krijoni kujtime të paharrueshme me ne – sepse çdo detaj është i menduar për ta bërë momentin tuaj të veçantë dhe të papërsëritshëm! 🥂
+          🗓️Rezervoni tani dhe përgatituni për një eksperiencë që do të tejkalojë pritshmëritë tuaja.
+        </p>
+    </div>
+  </section>
+
+
+
+<div class="container">
+  <div class="content">
+      <h1>ILIRIA DE LUXE</h1>
+      <p style="color: #fff;">Perjetoni magjine e dasmes qe ofron Restaurant Iliria De Luxe
+        Madheshtia qe ofrojne ambientet tona magjepsese, te dedikuara enkas per diten me te vecante 
+        te jetes tuaj, garantojne eksperience te paharruar. Ndricimi i ngrohte, enterieri tejet luksoz, ushqimi cilesore, 
+        sherbimi i shpejte; te gjitha keto e bejne dasmen tuaj me se te vecante. Per dasma te vogla apo edhe me me shume mysafir
+        , ne kemi shum ambiente tejet unike, enkas per dasmen tuaj. E nuk ka hamendesi ne zgjidhje per dasmen tuaj rezervo 
+        tani qe mos te nxinet radha ësht tejet te volitshme te ofertave per ahengun tuaj.</p>
+  </div>
+
+  
+  <div class="video-container">
+      <video controls autoplay muted loop>
+          <source src="../img/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+</div>
+
+
+
+
+<section class="shop-section">
+    <div class="image-cont">
+        <img src="../img/dasma1.jpg" alt="Gold Necklace" />
+    </div>
+    <div class="content-cont">
+        <h3>Restaurant Dasmash</h3>
+        <h1>ILIRIA DE LUXE</h1>
+        <p>Restaurant Ilira De Luxe është një destinacion me traditë dhe renome në organizimin e ngjarjeve të vecanta familjare.
+            Ky vend është i njohur për shëerbimin e shkëlqyer dhe ushqimin e përgatitur me kujdes,duke u gëershetuar
+            moedrnja me tradicionalen.Me një reputacion të ndërtuar ndër vite,mysafirët gjithmonë ndahen të kënaqur,
+            duke vlerësuar cilësinë e lartë të shëerbimit dhe atmosferën e vecantë që ofron Restauranti.
+        </p>
+    </div>
+  </section>
+
+<div class="container">
+  <div class="content">
+      <h1> Helikopter për ditën tuaj të veqantë</h1>
+      <p style="color: #fff;">
+        Iliria De Luxe Jemi të përkushtruar të sigurojmë një nivel të lartë shërbimi për qdo klient
+        Nëse dita juaj e dasmës është një nga ditët më të rëndësishme të jetës suaj bëjeni atë edhe më 
+        të veqantë Dhurojini vetes një ditë qiellore plot romancë që do të dëshironit ta kujtoni perherë
+        ☎️049287102 📲+38349287102 rezervo Helikopter për ditën tuaj të veqantë</p>
+  </div>
+
+  <div class="video-container">
+      <video controls autoplay muted loop>
+          <source src="../img/helikopter.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+</div><br><br><br><br><br><br>
+
+<div class="container">
+    <div class="video-container">
+        <video controls autoplay muted loop>
+            <source src="../img/video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="content">
+        <h1>Salla për Konferenca</h1>
+        <p style="color: #fff;">Iliria De Luxe ka salla të veçanta per konferenca!
+            Të gjitha sallat tona janë pajisura me projektor,
+            sistem zerimi, mikrofona ndriqim ideal për ti
+            plotësuar kerksat e çfaredo prezantimi.
+            Për rezervime:☎️ +383 44 82 82 85</p>
+    </div>
+  </div>
+
+
+
+<footer>
+  <div class="contain">
+      <div class="row">
+          <div class="footer-col">
+              <h4>Finegap</h4>
+              <ul>
+                  <li><a href="">Tuorials</a></li>
+                  <li><a href="">Programing</a></li>
+                  <li><a href="">Development</a></li>
+                  <li><a href="">Technology</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Properties</h4>
+              <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact US</a></li>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Our History</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Services</h4>
+              <ul>
+                  <li><a href="">API Integration</a></li>
+                  <li><a href="">Web Development</a></li>
+                  <li><a href="">Mobile Development</a></li>
+                  
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Newsletter</h4>
+              <form action="">
+                  <input type="text" placeholder="Your Name" class="inputName">
+                  <input type="email" placeholder="Enter Company Email" class="inputEmail">
+                  <input type="submit" value="Submit" class="inputSubmit">
+              </form>
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col">
+              <p>&#169; Copyright @ | <a href="#" style="text-decoration: none; color: white;">Altina Restelica</a></p>
+          </div>
+          <div class="socialIcons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>
